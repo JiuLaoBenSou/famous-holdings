@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-20T17:39:06.657Z",
+  "generatedAt": "2026-10-20T18:25:58.955Z",
   "baseURL": "https://jiulaobensou.github.io/famous-holdings",
   "repoURL": "https://github.com/JiuLaoBenSou/famous-holdings",
-  "people": 28,
-  "records": 8705,
-  "snapshots": 69,
-  "sources": 69,
-  "htmlPages": 9567,
+  "people": 50,
+  "records": 11218,
+  "snapshots": 112,
+  "sources": 112,
+  "htmlPages": 12167,
   "advertising": false,
   "backend": "Static public edition; collection and editorial SQLite remain local"
 }
