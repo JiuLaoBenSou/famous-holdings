@@ -1,0 +1,98 @@
+[
+  {
+    "family": "Bodoni Moda",
+    "file": "bodoni-moda-0.woff2",
+    "url": "https://fonts.gstatic.com/s/bodonimoda/v28/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1KOxQ.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Bodoni%20Moda:wght@400;700&display=swap"
+  },
+  {
+    "family": "Bodoni Moda",
+    "file": "bodoni-moda-1.woff2",
+    "url": "https://fonts.gstatic.com/s/bodonimoda/v28/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1KOxQ.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Bodoni%20Moda:wght@400;700&display=swap"
+  },
+  {
+    "family": "Cormorant Garamond",
+    "file": "cormorant-garamond-0.woff2",
+    "url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Cormorant%20Garamond:wght@400;700&display=swap"
+  },
+  {
+    "family": "DM Sans",
+    "file": "dm-sans-0.woff2",
+    "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=DM%20Sans:wght@400;700&display=swap"
+  },
+  {
+    "family": "Barlow Condensed",
+    "file": "barlow-condensed-0.woff2",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTx3L3I-JCGChYJ8VI-L6OO_au7B6xHT2g.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Barlow%20Condensed:wght@400;700&display=swap"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "ibm-plex-mono-0.woff2",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:wght@400;700&display=swap"
+  },
+  {
+    "family": "Libre Baskerville",
+    "file": "libre-baskerville-0.woff2",
+    "url": "https://fonts.gstatic.com/s/librebaskerville/v24/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxM.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Libre%20Baskerville:wght@400;700&display=swap"
+  },
+  {
+    "family": "Archivo",
+    "file": "archivo-0.woff2",
+    "url": "https://fonts.gstatic.com/s/archivo/v25/k3kPo8UDI-1M0wlSV9XAw6lQkqWY8Q82sLydOxI.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
+  },
+  {
+    "family": "Cormorant Garamond",
+    "file": "cormorant-garamond-1.woff2",
+    "url": "https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Cormorant%20Garamond:wght@400;700&display=swap"
+  },
+  {
+    "family": "DM Sans",
+    "file": "dm-sans-1.woff2",
+    "url": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=DM%20Sans:wght@400;700&display=swap"
+  },
+  {
+    "family": "Fraunces",
+    "file": "fraunces-0.woff2",
+    "url": "https://fonts.gstatic.com/s/fraunces/v38/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c7qv8.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap"
+  },
+  {
+    "family": "Barlow Condensed",
+    "file": "barlow-condensed-1.woff2",
+    "url": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Barlow%20Condensed:wght@400;700&display=swap"
+  },
+  {
+    "family": "IBM Plex Mono",
+    "file": "ibm-plex-mono-1.woff2",
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3pQPwlBFgg.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:wght@400;700&display=swap"
+  },
+  {
+    "family": "Libre Baskerville",
+    "file": "libre-baskerville-1.woff2",
+    "url": "https://fonts.gstatic.com/s/librebaskerville/v24/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxM.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Libre%20Baskerville:wght@400;700&display=swap"
+  },
+  {
+    "family": "Fraunces",
+    "file": "fraunces-1.woff2",
+    "url": "https://fonts.gstatic.com/s/fraunces/v38/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c7qv8.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap"
+  },
+  {
+    "family": "Archivo",
+    "file": "archivo-1.woff2",
+    "url": "https://fonts.gstatic.com/s/archivo/v25/k3kPo8UDI-1M0wlSV9XAw6lQkqWY8Q82sLydOxI.woff2",
+    "cssSource": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap"
+  }
+]

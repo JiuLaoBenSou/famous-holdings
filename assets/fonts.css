@@ -1,0 +1,16 @@
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/dm-sans-0.woff2') format('woff2');}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/dm-sans-1.woff2') format('woff2');}
+@font-face{font-family:'Bodoni Moda';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/bodoni-moda-0.woff2') format('woff2');}
+@font-face{font-family:'Bodoni Moda';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/bodoni-moda-1.woff2') format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/ibm-plex-mono-0.woff2') format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/ibm-plex-mono-1.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/archivo-0.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/archivo-1.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/cormorant-garamond-0.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/cormorant-garamond-1.woff2') format('woff2');}
+@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/libre-baskerville-0.woff2') format('woff2');}
+@font-face{font-family:'Libre Baskerville';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/libre-baskerville-1.woff2') format('woff2');}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/barlow-condensed-0.woff2') format('woff2');}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/barlow-condensed-1.woff2') format('woff2');}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:400;font-display:swap;src:url('./fonts/fraunces-0.woff2') format('woff2');}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url('./fonts/fraunces-1.woff2') format('woff2');}
