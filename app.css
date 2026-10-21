@@ -3378,4 +3378,8 @@ main {
 .ai-notice a{display:inline-block;margin-top:7px;font-size:12px;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:640px){.ai-notice{grid-template-columns:minmax(0,1fr);gap:8px;padding:18px 0}.ai-notice p{font-size:12px}}
 
+/* HoldingsAtlas: keep the longer wordmark and Feedback usable on narrow screens. */
+.site-header .brand{white-space:nowrap}
+@media(max-width:650px){.site-header .brand{font-size:clamp(20px,5.8vw,27px)}}
+
 [hidden]{display:none!important}.static-asset-directory{margin:48px 0}.static-asset-directory .sources-list{display:grid;gap:12px;padding:20px 0}
