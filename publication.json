@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T01:34:37.462Z",
+  "generatedAt": "2026-10-22T02:00:53.124Z",
   "baseURL": "https://holdingsatlas.com",
   "repoURL": "https://github.com/JiuLaoBenSou/famous-holdings",
   "people": 50,
@@ -9,5 +9,6 @@
   "htmlPages": 12168,
   "advertising": true,
   "advertisingStatus": "AdSense code connected; approval and Auto ads settings managed in Google AdSense",
+  "manualAdSlot": "4965354310",
   "backend": "Static public edition; collection and editorial SQLite remain local"
 }
