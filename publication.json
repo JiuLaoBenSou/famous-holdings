@@ -1,20 +1,16 @@
 {
-  "generatedAt": "2026-10-22T03:51:31.962Z",
+  "generatedAt": "2026-10-22T06:21:36.133Z",
   "baseURL": "https://holdingsatlas.com",
   "repoURL": "https://github.com/JiuLaoBenSou/famous-holdings",
-  "people": 100,
-  "records": 88574,
+  "people": 112,
+  "records": 88588,
   "snapshots": 210,
-  "sources": 210,
-  "htmlPages": 89735,
+  "sources": 220,
+  "htmlPages": 89786,
   "advertising": true,
   "advertisingStatus": "AdSense code connected; approval and Auto ads settings managed in Google AdSense",
   "manualAdSlot": "4965354310",
   "compactRecords": true,
   "citationDelivery": "Full record HTML with manual quotation; existing JSON URLs preserved",
-  "backend": "Static public edition; collection and editorial SQLite remain local",
-  "metadataUpdatedAt": "2026-10-22T04:00:13.626Z",
-  "metadataSHA256": "18fb869e22bbfb52d95e0a106057c53e626f7ac98710ce092dfbffcaaa628052",
-  "portraits": 85,
-  "recordDelivery": "Full factual HTML; compact navigation, shared feedback/review notes, no unused record ad SDK"
+  "backend": "Static public edition; collection and editorial SQLite remain local"
 }
