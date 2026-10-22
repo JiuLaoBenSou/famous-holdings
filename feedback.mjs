@@ -12,3 +12,10 @@ document.querySelectorAll('[data-feedback-form]').forEach(form=>{
   finally{clearTimeout(timeout);button.disabled=false;}
  });
 });
+
+// Only same-origin frames belonging to this page may resize their own feedback area.
+if(window.parent!==window&&document.body.classList.contains('feedback-embed-document')){
+ const pageField=document.querySelector('[name="pageURL"]');try{const ref=new URL(document.referrer);if(ref.origin===location.origin&&pageField)pageField.value=ref.pathname;}catch{}
+ const reportHeight=()=>parent.postMessage({type:'holdingsatlas-feedback-height',height:Math.ceil(document.body.scrollHeight)},location.origin);
+ if('ResizeObserver'in window)new ResizeObserver(reportHeight).observe(document.body);reportHeight();
+}else window.addEventListener('message',event=>{if(event.origin!==location.origin||event.data?.type!=='holdingsatlas-feedback-height')return;const frame=[...document.querySelectorAll('iframe.feedback-embed')].find(f=>f.contentWindow===event.source),height=Number(event.data.height);if(frame&&Number.isFinite(height)&&height>=150&&height<=2500)frame.style.height=height+'px';});
