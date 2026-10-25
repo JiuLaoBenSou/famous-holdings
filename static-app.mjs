@@ -12,20 +12,11 @@ document.addEventListener('click',async event=>{
  button.disabled=true;try{const text=button.dataset.citation?(await loadCitation(button.dataset.citation)).text:document.getElementById(button.dataset.copyText).value;try{await navigator.clipboard.writeText(text);toast('Quotation copied, including dates, attribution and sources.');}catch{const field=button.dataset.copyText&&document.getElementById(button.dataset.copyText);if(field){field.focus();field.select();toast('Text selected. Copy it manually.');}else{const fallback=button.parentElement.querySelector('a');if(fallback)location.assign(fallback.href);}}}catch(e){toast(e.message);}finally{button.disabled=false;}
 });
 $('#source-dialog')?.addEventListener('click',e=>{if(e.target===$('#source-dialog'))$('#source-dialog').close();});
-let peoplePromise,recordsPromise;
-const peopleData=()=>peoplePromise||=(loadJSON(base+'data/people.json'));
+let recordsPromise;
 const recordsData=()=>recordsPromise||=(loadJSON(base+'data/records.json'));
-async function filterDirectory(params){
- const data=await peopleData(),query=(params.get('q')||'').trim().toLowerCase(),category=params.get('category')||'All',asset=params.get('asset')||'all',sort=params.get('sort')||'featured';
- const profiles=new Map(data.map(p=>[p.slug,p])),container=$('#directory-results');if(!container)return;
- const rows=[...container.querySelectorAll('.person-row')];let count=0;
- rows.sort((a,b)=>{const get=el=>profiles.get(new URL(el.querySelector('.person-identity').href).pathname.split('/').filter(Boolean).at(-1)),x=get(a),y=get(b);return sort==='name'?x.name.localeCompare(y.name):sort==='date'?(y.latest||'').localeCompare(x.latest||''):(x.priority??999)-(y.priority??999);});
- for(const row of rows){const slug=new URL(row.querySelector('.person-identity').href).pathname.split('/').filter(Boolean).at(-1),p=profiles.get(slug),show=p&&(!query||p.search.includes(query))&&(category==='All'||p.category===category)&&(asset==='all'||p.assets.includes(asset));row.hidden=!show;if(show)count++;container.append(row);}
- container.querySelector('.results-meta span').textContent=count+' matching profiles';$('#directory-form [name="q"]').value=query;
- document.querySelectorAll('.category-tabs button').forEach(b=>{b.classList.toggle('selected',b.value===category);b.setAttribute('aria-pressed',String(b.value===category));});
-}
-$('#directory-form')?.addEventListener('submit',async e=>{e.preventDefault();const params=new URLSearchParams(new FormData(e.target));if(e.submitter?.name)params.set(e.submitter.name,e.submitter.value);history.replaceState(null,'','?'+params+'#directory');try{await filterDirectory(params);}catch(err){toast(err.message);}});
-if($('#directory-form'))filterDirectory(new URLSearchParams(location.search)).catch(e=>toast(e.message));
+if($('#directory-form'))import('./directory.mjs').then(module=>module.initDirectory({base,staticEdition:true})).catch(()=>{
+ const status=$('#directory-progress');if(status)status.textContent='Use Load more to open the next page.';
+});
 const person=document.documentElement.dataset.staticPerson;
 function filterHoldings(){const q=(new URLSearchParams(location.search).get('q')||'').toLowerCase();const input=$('.record-filters input[name="q"]');if(input)input.value=q;let count=0;document.querySelectorAll('.holdings-table tbody tr').forEach(row=>{row.hidden=!!q&&!row.textContent.toLowerCase().includes(q);if(!row.hidden)count++;});const label=$('.records-section .section-label span:last-child');if(label)label.textContent=count+' MATCHING RECORDS';}
 if(person){filterHoldings();$('.record-filters')?.addEventListener('submit',e=>{e.preventDefault();const p=new URLSearchParams(new FormData(e.target)),period=p.get('period'),q=p.get('q')||'';location.assign(base+'people/'+encodeURIComponent(person)+'/period/'+encodeURIComponent(period)+'/'+(q?'?q='+encodeURIComponent(q):'')+'#holdings');});}
