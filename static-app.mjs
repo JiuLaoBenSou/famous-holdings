@@ -1,3 +1,6 @@
+import {decodeRecordsDocument} from './records-codec.mjs';
+const recordsCodecVersion='codec-v1-8d966b6cb4b5';
+const recordsDataVersion=document.querySelector('meta[name="records-data-version"]')?.content||recordsCodecVersion;
 const base=document.querySelector('meta[name="static-base-path"]').content;
 const $=s=>document.querySelector(s),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let timer;function toast(text){const el=$('#toast');el.textContent=text;el.classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>el.classList.remove('visible'),5000);}
@@ -13,7 +16,7 @@ document.addEventListener('click',async event=>{
 });
 $('#source-dialog')?.addEventListener('click',e=>{if(e.target===$('#source-dialog'))$('#source-dialog').close();});
 let recordsPromise;
-const recordsData=()=>recordsPromise||=(loadJSON(base+'data/records.json'));
+const recordsData=()=>recordsPromise||=(loadJSON(base+'data/records.json?v='+recordsDataVersion).then(decodeRecordsDocument));
 if($('#directory-form'))import('./directory.mjs').then(module=>module.initDirectory({base,staticEdition:true})).catch(()=>{
  const status=$('#directory-progress');if(status)status.textContent='Use Load more to open the next page.';
 });
